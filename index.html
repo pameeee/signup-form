@@ -16,9 +16,9 @@
       <h2>Code Together: Join our accountability community for web development!</h2>
       <h3>Follow The Odin Project curriculum alongside fellow learners and engage in daily check-ins within a supportive
         community.</h3>
-      <div class="form-container">
-        <p>Enroll now</p>
-        <form>
+      <form>
+        <div>
+          <h1>Enroll now</h1>
           <p>
             <label for="firstName">First name</label>
             <input type="text" id="firstName" name="firstName" />
@@ -29,7 +29,7 @@
           </p>
           <p>
             <label for="email">Email address:</label>
-            <input type="email" required name="email" id="email">
+            <input type="email" name="email" id="email">
           </p>
           <p>
             <label for="phone">Phone number</label>
@@ -42,10 +42,11 @@
           <p>
             <label for="confirm_password">Password</label>
             <input class="error" type="password" name="confirm_password" id="confirm_password">
+            <p id="passwordmessage">Hello world</p>
           </p>
-        </form>
-      </div>
-      <button>Create Account</button>
+        </div>
+        <input type="submit" value="Send" />
+      </form>
       <p>Already have an account? <a href="login.html">Log in</a></p>
     </div>
   </div>
