@@ -66,6 +66,7 @@ form div {
 
     input.error {
         border-color: red;
+        border-width: 2px;
     }
 
     input[type="submit"] {

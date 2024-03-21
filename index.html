@@ -21,7 +21,7 @@
           <h1>Enroll now</h1>
           <p>
             <label for="firstName">First name</label>
-            <input type="text" id="firstName" name="firstName" />
+            <input type="text" id="firstName" name="firstName" required/>
           </p>
           <p>
             <label for="lastName">Last name</label>
@@ -37,20 +37,22 @@
           </p>
           <p>
             <label for="password">Password</label>
-            <input class="error" type="password" name="password" id="password">
+            <input class="error" type="password" name="password" id="password" required>
           </p>
           <p>
             <label for="confirm_password">Password</label>
             <input class="error" type="password" name="confirm_password" id="confirm_password">
-            <p id="passwordmessage">Hello world</p>
+          <p id="passwordmessage">Hello world</p>
           </p>
         </div>
-        <input type="submit" value="Send" />
+        <!-- <input type="submit" value="SUBMIT" onclick="checkPassword()"> -->
+        <button onclick="checkForm()">Button</button>
       </form>
+      <!-- <button onclick="checkPassword()">Button</button> -->
       <p>Already have an account? <a href="login.html">Log in</a></p>
     </div>
   </div>
-
+  <script src="script.js"></script>
 </body>
 
 </html>
