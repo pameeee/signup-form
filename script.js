@@ -6,6 +6,7 @@ let passwordMessage = document.getElementById("passwordmessage");
 
 function checkForm() {
     checkPassword();
+    
 }
 
 function checkPassword() {
@@ -16,6 +17,7 @@ function checkPassword() {
         password.setCustomValidity("Passwords don't match.");
     } else {
         console.log("Passwords match");
+        password.setCustomValidity("");
     }
 
     checkValidity();
