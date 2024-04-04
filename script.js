@@ -5,31 +5,13 @@ let lastName = document.getElementById("lastName");
 let email = document.getElementById("email");
 let password = document.getElementById("password");
 let confirmPassword = document.getElementById("confirm_password");
+const forms = document.querySelectorAll("form");
+const form = forms[0];
 // let passwordMessage = document.getElementById("passwordmessage");
 
-// inputs.forEach(function(input) {
-//     input.addEventListener("input", function() {
-//         if (!this.checkValidity()) {
-//             console.log(" Test");
-//             this.classList.add("error");
-//         } else {
-//             this.classList.remove("error");
-//         }
-//     });
-// });
-
-// inputs.forEach(function(input) {
-//     input.addEventListener("focus", function() {
-//         this.classList.remove("error");
-//     });
-//     input.addEventListener("blur", function() {
-//         this.classList.add("error");
-//     });
-// });
-
-function checkForm() {
+function runSubmit() {
     checkPassword();
-    // console.log("Hello world");
+    checkForm();
 }
 
 function checkPassword() {
@@ -43,16 +25,21 @@ function checkPassword() {
         confirmPassword.setCustomValidity("");
     }
 
-    console.log("First name validity:", firstName.validity.valid);
-    console.log("Last name validity:", lastName.validity.valid);
-    console.log("Email validity:", email.validity.valid);
-    console.log("Password 1 validity:", password.validity.valid);
-    console.log("Password 2 validity:", confirmPassword.validity.valid);
+    // console.log("First name validity:", firstName.validity.valid);
+    // console.log("Last name validity:", lastName.validity.valid);
+    // console.log("Email validity:", email.validity.valid);
+    // console.log("Password 1 validity:", password.validity.valid);
+    // console.log("Password 2 validity:", confirmPassword.validity.valid);
 }
 
-// function checkValidity() {
-//     console.log("First name validity:", firstName.validity.valid);
-//     console.log("Last name validity:", lastName.validity.valid);
-//     console.log("Password 1 validity:", password.validity.valid);
-//     console.log("Password 2 validity:", confirmPassword.validity.valid);
-// }
+function checkForm() {
+    Array.from(form.elements).forEach((input) => {
+        if (input.tagName.toLowerCase() !== "button") {
+            if (input.validity.valid) {
+                input.classList.remove("error");
+            } else {
+                input.classList.add("error");
+            }
+        }
+    });
+}
