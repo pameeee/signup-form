@@ -8,20 +8,20 @@
 
 <body>
 
-  <div class="container">
-    <div class="artbar">
-      <div class="logo-container">Logo container here</div>
-    </div>
-    <div class="signup-container">
-      <h2>Code Together: Join our accountability community for web development!</h2>
-      <h3>Follow The Odin Project curriculum alongside fellow learners and engage in daily check-ins within a supportive
-        community.</h3>
-      <form>
-        <div>
-          <h1>Enroll now</h1>
+  <div class="artbar">
+    <div class="logo-container">Logo container here</div>
+  </div>
+  <div class="signup-container">
+    <h2>Code Together: Join our accountability community for web development!</h2>
+    <h3>Follow The Odin Project curriculum alongside fellow learners and engage in daily check-ins within a supportive
+      community.</h3>
+    <form>
+      <div class="form-container">
+        <h1>Enroll now</h1>
+        <div class="form-elements">
           <p>
             <label for="firstName">First name</label>
-            <input type="text" id="firstName" name="firstName"/>
+            <input type="text" id="firstName" name="firstName" />
           </p>
           <p>
             <label for="lastName">Last name</label>
@@ -42,13 +42,13 @@
           <p>
             <label for="confirm_password">Confirm password</label>
             <input type="password" name="confirm_password" id="confirm_password" class="error" required>
-          <p id="passwordmessage">Hello world</p>
           </p>
+          <p id="password-message">* Passwords do not match</p>
         </div>
-        <button onclick="runSubmit()">Button</button>
-      </form>
-      <p>Already have an account? <a href="login.html">Log in</a></p>
-    </div>
+      </div>
+      <button onclick="runSubmit()">Create Account</button>
+    </form>
+    <p>Already have an account? <a href="login.html">Log in</a></p>
   </div>
   <script src="script.js"></script>
 </body>
