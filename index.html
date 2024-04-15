@@ -2,17 +2,20 @@
 <html lang="en">
 
 <head>
-  <title>HTML 5 Boilerplate</title>
+  <title>Codemmunity</title>
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
   <div class="artbar">
-    <div class="logo-container">Logo container here</div>
+    <div class="logo-container">
+      <img src="assets/logo.png" alt="Logo">
+      <h4>Codemmunity</h3>
+    </div>
   </div>
   <div class="signup-container">
-    <h2>Code Together: Join our accountability community for web development!</h2>
+    <h2>Codemmunity: Join our accountability community for web development!</h2>
     <h3>Follow The Odin Project curriculum alongside fellow learners and engage in daily check-ins within a supportive
       community.</h3>
     <form>
@@ -43,7 +46,7 @@
             <label for="confirm_password">Confirm password</label>
             <input type="password" name="confirm_password" id="confirm_password" class="error" required>
           </p>
-          <p id="password-message">* Passwords do not match</p>
+          <p id="password-message"></p>
         </div>
       </div>
       <button onclick="runSubmit()">Create Account</button>

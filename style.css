@@ -21,18 +21,32 @@ body {
 }
 
 .artbar {
-    width: 30%;
+    flex: 1;
     background-image: url(assets/bootcamp-bg.jpg);
     background-size: cover;
     background-position: 60%;
 }
 
     .logo-container {
-        background-color: black;
-        opacity: 0.6;
+        display: flex;
+        color: red;
+        background-color: rgba(255, 255, 255, 0.6);
         height: 20%;
         margin-top: 12em;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
     }
+
+        .logo-container img {
+            max-width: 100%;
+            max-height: 100%;
+            flex-shrink: 0;
+        }
+
+        h4 {
+            color: black;
+        }
 
     h1, h2, h3 {
         font-size: 1.5em;
@@ -99,6 +113,7 @@ button {
     border: none;
     border-radius: 8px;
     cursor: pointer;
+    margin: 2% 0;
 }
 
 button,
@@ -117,6 +132,12 @@ input {
     font-size: small;
 }
 
+a {
+    color: #596d48;
+    font-weight: bold;
+    text-decoration: none;
+}
+
 input.error {
     border-color: red;
     border-width: 1px;
@@ -126,7 +147,7 @@ input[type="submit"] {
     display: block;
 }
 
-@media (max-width: 700px) {
+/* @media (max-width: 700px) {
     .mobile-header {
         display: block;
     }
@@ -144,4 +165,4 @@ input[type="submit"] {
     .artbar {
         display: none;
     }
-}
+} */
