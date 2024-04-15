@@ -1,12 +1,11 @@
 * {
     margin: 0;
     padding: 0;
-    /* border: 1px dotted black; */
 }
 
 @font-face {
-    font-family: Roboto;
-    src: url(assets/Roboto/Roboto-Italic.ttf);
+    font-family: RobotoLight;
+    src: url(assets/Roboto/Roboto-Light.ttf);
 }
 
 body {
@@ -15,7 +14,6 @@ body {
     margin: 0;
     padding: 0;
     min-height: 100vh;
-    /* flex-direction: column; */
     display: flex;
     flex: 1 0 auto;
 }
@@ -43,21 +41,26 @@ body {
         text-align: center;
     }
 
+        .logo-container > * {
+            padding: 1%;
+        }
+
         .logo-container img {
-            max-width: 100%;
-            max-height: 100%;
+            max-width: 80%;
+            max-height: 80%;
             flex-shrink: 0;
         }
 
         h4 {
             color: black;
-            font-family: Roboto, sans-serif;
+            font-family: RobotoLight, sans-serif;
             font-size: 3em;
         }
 
     h1, h2, h3 {
         font-size: 1.5em;
         font-weight: 500;
+        margin: 1%;
     }
 
     .form-elements {
@@ -173,3 +176,8 @@ input[type="submit"] {
         display: none;
     }
 } */
+
+/*  TO DO:
+1. Add blue border and and subtle box-shadow for selected input.
+Use :focus
+ */
